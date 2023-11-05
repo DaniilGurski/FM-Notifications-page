@@ -1,160 +1,181 @@
 <!DOCTYPE html>
-<html class = "page" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="page" lang="en">
 
-  <!--Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!--Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
 
-  <!-- JS -->
-  <script src="script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Favorite icon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <!-- JS -->
+    <script src="script.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; margin-top: 10px;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Favorite icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-</head>
-<body class = "page__body">
+    <title>Frontend Mentor | Notifications page</title>
 
-  <div class="primary-wrapper">
-    <header class = "primary-header"> 
-      <div class = "notification-number">
-        <span class = "weight-bold notification-number__title"> Notifications </span> 
-        <div class = "notification-number__display"> 3 </div>
-      </div>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 10px;
+      }
 
-      <button class = "primary-header__mark-button"> Mark all as read </button>
-    </header>
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-    <main class = "main-content"> 
-      <!-- Mark Webber -->
-      <div class = "notification-block notification-block--new"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-mark-webber.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-block__action notification-block__action--new"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Mark Webber </a> 
-            reacted to your recent post 
-            <a class = "link weight-bold notification-block__action-target" href = "#"> My first tournament today! </a>
-          </p>
+  </head>
 
-          <span class = "notification-block__time-ago">1m ago</span>
-        </div>
-      </div>
+  <body class="page__body">
 
-
-      <!-- Angela Gray -->
-      <div class = "notification-block notification-block--new"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-angela-gray.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-block__action  notification-block__action--new"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Angela Gray </a> 
-            followed you
-          </p>
-          <span class = "notification-block__time-ago">5m ago</span>
-        </div>
-      </div>
-
-
-      <!-- Jacob Thompson -->
-      <div class = "notification-block notification-block--new"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-jacob-thompson.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-block__action  notification-block__action--new"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Jacob Thompson </a> 
-            has joined your group
-            <a class = "link weight-bold notification-block__action-target notification-block__action-target--group" href = "#"> Chess Club </a>
-          </p>
-          <a class = "notification-block__time-ago">1 day ago</a>
-        </div>
-      </div>
-
-
-      <!-- Rizky Hasanuddin -->
-      <div class = "notification-block notification-block"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-rizky-hasanuddin.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-block__action  notification-block__action"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Rizky Hasanuddin </a> 
-            sent you a private message
-          </p>
-          <span class = "notification-block__time-ago">5 days ago</span>
+    <div class="primary-wrapper">
+      <header class="primary-header">
+        <div class="notification-number">
+          <span class="weight-bold notification-number__title"> Notifications </span>
+          <div class="notification-number__display"> 3 </div>
         </div>
 
-        <a class = "link notification-block__comment" href = "#"> 
-          <div> 
-            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-            I'm already having lots of fun and improving my game.
+        <button class="primary-header__mark-button"> Mark all as read </button>
+      </header>
+
+      <main class="main-content">
+        <!-- Mark Webber -->
+        <div class="notification-block notification-block--new">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-mark-webber.webp"
+            alt="Profile image">
+
+          <div class="notification-block__message">
+            <p class="notification-block__action notification-block__action--new">
+              <a class="link weight-bold notification-block__user-name" href="#"> Mark Webber </a>
+              reacted to your recent post
+              <a class="link weight-bold notification-block__action-target" href="#"> My first tournament today! </a>
+            </p>
+
+            <span class="notification-block__time-ago">1m ago</span>
           </div>
-        </a>
-      </div>
-
-
-      <!-- Kimberly Smith -->
-      <div class = "notification-block notification-block"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-kimberly-smith.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-block__action"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Kimberly Smith </a> 
-            commented on your picture
-          </p>
-          <span class = "notification-block__time-ago">1 week ago</span>
         </div>
 
-        <a class = "notification-block__post-image" href = "#"> <img class = "image" src = "assets/images/image-chess.webp" alt = "Post-image"> </a>
-      </div>
 
+        <!-- Angela Gray -->
+        <div class="notification-block notification-block--new">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-angela-gray.webp"
+            alt="Profile image">
 
-      <!-- Nathan Peterson -->
-      <div class = "notification-block notification-block"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-nathan-peterson.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-action"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Nathan Peterson </a> 
-            reacted to your recent post 
-            <a class = "link weight-bold notification-block__action-target" href = "#"> 5 end-game strategies to increase your win rate </a>
-          </p>
-          <span class = "notification-block__time-ago"> 2 weeks ago</span>
+          <div class="notification-block__message">
+            <p class="notification-block__action  notification-block__action--new">
+              <a class="link weight-bold notification-block__user-name" href="#"> Angela Gray </a>
+              followed you
+            </p>
+            <span class="notification-block__time-ago">5m ago</span>
+          </div>
         </div>
-      </div>
 
 
-      <!-- Anna Kim -->
-      <div class = "notification-block notification-block"> 
-        <img class = "image notification-block__profile-image" src = "assets/images/avatar-anna-kim.webp" alt = "Profile image">
-        
-        <div class = "notification-block__message"> 
-          <p class="notification-block__action  notification-block__action"> 
-            <a class = "link weight-bold notification-block__user-name" href = "#"> Anna Kim </a> 
-            left the group
-            <a class = "link weight-bold notification-block__action-target notification-block__action-target--group" href = "#"> Chess Club </a>
-          </p>
-          <span class = "notification-block__time-ago"> 2 weeks ago</span>
+        <!-- Jacob Thompson -->
+        <div class="notification-block notification-block--new">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-jacob-thompson.webp"
+            alt="Profile image">
+
+          <div class="notification-block__message">
+            <p class="notification-block__action  notification-block__action--new">
+              <a class="link weight-bold notification-block__user-name" href="#"> Jacob Thompson </a>
+              has joined your group
+              <a class="link weight-bold notification-block__action-target notification-block__action-target--group"
+                href="#"> Chess Club </a>
+            </p>
+            <a class="notification-block__time-ago">1 day ago</a>
+          </div>
         </div>
-      </div>
-    </main>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Daniil Gurski</a>.
-  </div>
-</body>
+
+
+        <!-- Rizky Hasanuddin -->
+        <div class="notification-block notification-block">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-rizky-hasanuddin.webp"
+            alt="Profile image">
+
+          <div class="notification-block__message">
+            <p class="notification-block__action  notification-block__action">
+              <a class="link weight-bold notification-block__user-name" href="#"> Rizky Hasanuddin </a>
+              sent you a private message
+            </p>
+            <span class="notification-block__time-ago">5 days ago</span>
+          </div>
+
+          <a class="link notification-block__comment" href="#">
+            <div>
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.
+            </div>
+          </a>
+        </div>
+
+
+        <!-- Kimberly Smith -->
+        <div class="notification-block notification-block">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-kimberly-smith.webp"
+            alt="Profile image">
+
+          <div class="notification-block__message">
+            <p class="notification-block__action">
+              <a class="link weight-bold notification-block__user-name" href="#"> Kimberly Smith </a>
+              commented on your picture
+            </p>
+            <span class="notification-block__time-ago">1 week ago</span>
+          </div>
+
+          <a class="notification-block__post-image" href="#"> <img class="image" src="assets/images/image-chess.webp"
+              alt="Post-image"> </a>
+        </div>
+
+
+        <!-- Nathan Peterson -->
+        <div class="notification-block notification-block">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-nathan-peterson.webp"
+            alt="Profile image">
+
+          <div class="notification-block__message">
+            <p class="notification-action">
+              <a class="link weight-bold notification-block__user-name" href="#"> Nathan Peterson </a>
+              reacted to your recent post
+              <a class="link weight-bold notification-block__action-target" href="#"> 5 end-game strategies to increase
+                your win rate </a>
+            </p>
+            <span class="notification-block__time-ago"> 2 weeks ago</span>
+          </div>
+        </div>
+
+
+        <!-- Anna Kim -->
+        <div class="notification-block notification-block">
+          <img class="image notification-block__profile-image" src="assets/images/avatar-anna-kim.webp"
+            alt="Profile image">
+
+          <div class="notification-block__message">
+            <p class="notification-block__action  notification-block__action">
+              <a class="link weight-bold notification-block__user-name" href="#"> Anna Kim </a>
+              left the group
+              <a class="link weight-bold notification-block__action-target notification-block__action-target--group"
+                href="#"> Chess Club </a>
+            </p>
+            <span class="notification-block__time-ago"> 2 weeks ago</span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Daniil Gurski</a>.
+    </div>
+  </body>
+
 </html>
